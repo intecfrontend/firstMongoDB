@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-
+const url = "mongodb+srv://me:pass@cluster0.zwawlch.mongodb.net/?retryWrites=true&w=majority"
 const app = express()
-
-app.listen(4000, () => { console.log('listening on 4000') })
+mongoose.connect(url)
+app.listen("4011", () => { console.log('listening on 4000') })
